@@ -319,7 +319,7 @@
   }
 
   .navbar-toggler .navbar-toggler-icon {
-    background: var(--primary-color);
+    background: #888;
     transition: background 10ms 300ms ease;
     display: block;
     width: 30px;
@@ -335,7 +335,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    background: var(--primary-color);
+    background: #888;
     width: 30px;
     height: 2px;
     content: '';

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
 
   @font-face {
       font-family: 'Plain';
@@ -70,13 +71,13 @@
     line-height: normal;
   }
 
-  h1 {
+  /* h1 {
     font-size: var(--h1-font-size);
     font-weight: var(--font-weight-bold);
     letter-spacing: -1px;
     text-transform: uppercase;
     margin: 20px 0;
-  }
+  } */
 
   h2 {
     font-size: var(--h2-font-size);
@@ -319,7 +320,7 @@
   }
 
   .navbar-toggler .navbar-toggler-icon {
-    background: #888;
+    background: #d3d3d3;
     transition: background 10ms 300ms ease;
     display: block;
     width: 30px;
@@ -335,7 +336,7 @@
     position: absolute;
     right: 0;
     left: 0;
-    background: #888;
+    background: #d3d3d3;
     width: 30px;
     height: 2px;
     content: '';
@@ -365,7 +366,45 @@
   .hero-text h6{
     font-size: 40px;
     font-weight: 600;
+    color: #acacac !important;
     margin-bottom: -20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .hero-text h1{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    margin: 20px 0;
+    color: #e7e7e7 !important;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .headline{
+    color: #fff;
+    font-size: 1.7rem;
+    letter-spacing: 1px !important;
+    font-family: 'Open Sans', sans-serif;
+    animation: scale 2s forwards;
+    margin-top: 25px !important;
+    margin-bottom: -10px !important;
+  }
+  .headline span{
+      color: #acacac;
+      font-weight: 600;
+      letter-spacing: 1px;
+  }
+  .header-icon .as{
+    font-size: 22px;
+    color: rgb(233, 233, 233);
+    transform: translateY(-50%);
+    margin: 6px;
+    margin-top: 20px;
+      padding: 7px;
+      box-shadow: 0 0 4px black;
+  }
+  .header-icon .as:hover,
+  .header-icon .as:focus{
+    color: #888;
+    transition: color .5s;
   }
 
   /*---------------------------------------

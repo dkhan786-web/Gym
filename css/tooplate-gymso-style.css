@@ -192,21 +192,6 @@
     box-sizing: border-box;
   }
 
-  a {
-    color: var(--link-color);
-    font-weight: normal;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  a:hover, 
-  a:active, 
-  a:focus {
-    color: var(--primary-color);
-    outline: none;
-    text-decoration: none;
-  }
-
 
   /* BG OVERLAY */
 
@@ -241,17 +226,6 @@
   .membership-form a {
     color: var(--primary-color);
   }
-
-
-  /*---------------------------------------
-    FEATURE          
-  -----------------------------------------*/
-
-  .feature {
-    background: var(--dark-color);
-    padding: 5rem 0;
-  }
-
 
   /*---------------------------------------
      MENU             
@@ -538,44 +512,170 @@
 
   .about {
     background: var(--about-bg-color);
+    margin-top: -70px;
   }
 
-  .about-working-hours {
-    border-left: 2px solid;
-    padding-left: 3.5rem;
-  }
+/** Services Section Start **/
+.title{
+  font-family: 'Raleway', sans-serif;
+	font-weight: 600;
+	font-size: 35px;
+	letter-spacing: 1px;
+  margin-top: 0px;
+  color: #1e1e1e;
+}
+.titleHR {
+	background: none repeat scroll 0 0 #cacaca;
+	height: 3px;
+	margin: 20px auto 0;
+	position: relative;
+	text-align: center;
+	width: 130px;
+	margin-bottom: 20px;
+}
+.titleHR span {
+	background: none repeat scroll 0 0 #e9c76b; 
+}
+.titleHR span {
+	border-left: 6px solid #fff;
+	border-right: 6px solid #fff;
+	display: inline-block;
+	height: 3px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	top: 0px;
+	width: 60px;
+}
+.services-hire{
+	margin-top: 10px;
+	text-align: center;
+}
+.services-hire p{
+	font-size: 20px;
+	color: #222222;
+}
+.services-hire p a{
+  text-decoration: solid;
+}
+.services__item {
+  margin-top: 50px;
+padding: 22px;
+}
+.services__item:hover {
+  box-shadow: 0 0 6px black;
+  -webkit-box-shadow: 0 0 6px black;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+transition: .3s;
+-webkit-transition: .3s;
+-o-transition: .3s;
+}
+.services__item:hover .services__item__icon:after {
+box-shadow: 0 0 6px black;
+-webkit-box-shadow: 0 0 6px black;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+transition: .3s;
+-webkit-transition: .3s;
+-o-transition: .3s;
+}
+.services__item h4 {
+  color: #000;
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 26px;
+  margin-bottom: 18px;
+}
+.services__item p {
+  margin-bottom: 0;
+  color: #414142;
+font-size: 16px;
+}
+.services__item p span {
+  color: #414142;
+font-size: 16px;
+font-weight: 500;
+}
 
-  .about-working-hours strong {
-    color: var(--white-color);
-    opacity: 0.85;
-  }
-
-  .team-thumb {
-    position: relative;
-  }
-
-  .team-info {
-    background: var(--white-color);
-    border-radius: 0 0 2px 2px;
-    box-shadow: 6px 0 38px rgba(20,20,20,0.10);
-    padding: 20px;
-    position: relative;
-  }
-
-  .team-info span {
-    font-weight: var(--font-weight-light);
-    opacity: 0.85;
-  }
-
-  .team-info .social-icon {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-
-  .team-info .social-icon li {
-    display: block;
-  }
+.services__item__icon {
+  position: relative;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.services__item__icon img{
+    padding: 10px;
+  width: 100%;
+}
+.services__item__icon:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+border: 2px solid #838383;
+border-radius: 5px;
+  content: "";
+  -webkit-transition: all, 0.5s;
+  -o-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+.feature {
+  background: var(--about-bg-color);
+  padding: 5rem 0;
+}
+/* carousel */
+.carousel-text{
+  border-right: 3px solid #888;
+}
+.carousel-text h1{
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+.client-area{
+	padding: 0px 0 0;
+  margin-top: 4px;
+}
+.client-logo-area .stock-varsity{
+	margin-top: 0px;
+}
+.slick-slide{
+	margin: 0 20px;
+}
+.slick-slide img{
+	width: 45%;
+  opacity: .2;
+}
+.slick-list{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.slick-list:focus{
+	outline: none;
+}
+.slick-slide{
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+.slick-slide img{
+	display: block;
+}
+.slick-initialized .slick-slide{
+	display: block;
+}
+.slick-loading .slick-slide{
+	visibility: hidden;
+}
+/** Services Section End **/
 
 
   /*---------------------------------------
@@ -700,5 +800,17 @@
     }
     .contact h2 span {
       display: block;
+    }
+    .carousel-text{
+      border-right: none;
+    }
+    .carousel-text h1{
+      text-transform: uppercase;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .slick-slide img{
+      width: 55%;
     }
   }

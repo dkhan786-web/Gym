@@ -112,56 +112,10 @@
     margin: 0;
   }
 
-  p {
-    color: var(--p-color);
-    font-size: var(--p-font-size);
-    font-weight: var(--font-weight-light);
-    line-height: 1.5em;
-  }
-
-  b, 
-  strong {
-    font-weight: var(--font-weight-bold);
-    letter-spacing: 0;
-  }
-
   .section {
     padding: 7rem 0;
   }
 
-
-  /* BUTTON */
-
-  .custom-btn {
-    background: transparent;
-    border-radius: var(--border-radius-small);
-    padding: 14px 24px;
-    color: var(--white-color);
-    font-size: var(--menu-font-size);
-    font-weight: var(--font-weight-normal);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-    transition: all 0.3s ease;
-  }
-
-  .custom-btn:hover {
-    color: var(--primary-color);
-  }
-
-  .custom-btn:focus {
-    box-shadow: none;
-  }
-
-  .custom-btn.bordered:hover,
-  .custom-btn.bordered:focus,
-
-  .custom-btn.bg-color:hover,
-  .custom-btn.bg-color:focus {
-    background: var(--white-color);
-    border-color: transparent;
-    color: var(--primary-color);
-  }
 
   .bordered {
     border: 1px solid var(--primary-color);
@@ -249,6 +203,10 @@
     line-height: normal;
     padding-top: 0;
     font-family: 'PT Sans Caption', sans-serif;
+  }
+  .navbar-brand:hover {
+    color: #d3d3d3;
+    text-decoration: none;
   }
   .navbar-brand span{
     background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28);
@@ -405,115 +363,77 @@
     transition: color .5s;
   }
 
-  /*---------------------------------------
-     CLASS               
-  -----------------------------------------*/
-
-  .class-info {
-    background: var(--white-color);
-    box-shadow: 6px 0 38px rgba(20,20,20,0.10);
-    border-radius: 0 0 2px 2px;
-    padding: 1rem 2rem;
-    position: relative;
-  }
-
-  .class-info img {
-    border-radius: 2px 2px 0 0;
-  }
-
-  .class-info strong {
-    color: var(--gray-color);
-  }
-
-  .class-price {
-    background: var(--primary-color);
-    border-radius: var(--border-radius-large);
-    color: var(--white-color);
-    font-weight: var(--font-weight-bold);
-    display: block;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    text-align: center;
-  }
-
-
-  /*---------------------------------------
-     SCHEDULE             
-  -----------------------------------------*/
-
-  .schedule {
-    background: var(--dark-color);
-  }
-
-  .schedule-table {
-    display: table;
-    border: 0;
-    text-align: center;
-  }
-
-  .schedule-table strong,
-  .schedule-table span {
-    display: block;
-    text-align: center;
-  }
-
-  .schedule-table strong {
-    color: var(--white-color);
-  }
-
-  .schedule-table span {
-    color: var(--gray-color);
-  }
-
-  .schedule-table span,
-  .schedule-table small {
-    font-size: var(--menu-font-size);
-    text-transform: uppercase;
-  }
-
-  .schedule-table small {
-    position: relative;
-    top: 10px;
-  }
-
-  .table .thead-light th,
-  .schedule-table tr td:first-child {
-    background: var(--primary-color);
-    border: 1px solid #212122;
-    color: var(--white-color);
-  }
-
-  .schedule-table .thead-light th {
-    border-bottom: 0;
-    text-transform: uppercase;
-  }
-
-  .table-bordered td, 
-  .table-bordered th {
-    border: 1px solid #212122;
-  }
-
-  .table-bordered td {
-    padding-bottom: 22px;
-  }
-
-  .table td, .table th {
-    padding: 1rem;
-  }
-
 
   /*---------------------------------------
       ABOUT & TEAM            
   -----------------------------------------*/
 
-  .about {
-    background: var(--about-bg-color);
-    margin-top: -70px;
-  }
+.about {
+  background: var(--about-bg-color);
+  margin-top: -70px;
+}
+.fixed-bg {
+  background: linear-gradient(rgba(0,0,0,0.9)0%, rgba(0,0,0,0.9)100%) ,url('../images/bg.jpg') no-repeat center center fixed;
+  -webkit-background: linear-gradient(rgba(0,0,0,0.9)0%, rgba(0,0,0,0.9)100%) ,url('../assets/images/bg.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-width: 100%;
+  width: 100%;
+  height: 60vh;
+}
+.my-services .col-md-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.discover-our-story{
+  margin-top: -100px;
+}
+.about-bg{
+  background-color: #fff;
+  box-shadow: 0 0 5px #888;
+  transform: translateY(40%);
+  padding: 40px 70px 20px 70px;
+}
+.about-title{
+  margin-top: 0px;
+}
+.box-shadow-full{
+  margin-top: 30px;
+}
+.about-me{
+  padding-right: 20px;
+}
+.global-headline{
+  padding-bottom: 5px;
+}
+.global-headline span{
+  color: #696969;
+  font-size: 20px;
+  font-weight: 600;
+}
+.lead{
+  color: rgb(24, 24, 24);
+  font-weight: 500;
+  font-size: 17px;
+}
+/* Skills */
+.skill-mf{
+  transform: translateY(120%);
+}
+.skill-mf span {
+  color: #4e4e4e;
+}
+.skill-mf .progress {
+  background-color: #ececec;
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #bdbdbd;
+}
+
 
 /** Services Section Start **/
 .title{
@@ -671,7 +591,25 @@ font-weight: 500;
   /*---------------------------------------
      CONTACT              
   -----------------------------------------*/
-
+.contact{
+  margin-top: 350px;
+}
+.lead{
+  color: rgb(24, 24, 24);
+  font-weight: 500;
+  font-size: 17px;
+}
+.contact-info i{
+  background: rgb(190, 190, 190);
+  width: 30px;
+  height: 30px;
+  color: #888;
+  text-align: center;
+  align-items: center;
+  padding-top: 6px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
   .webform input,
   button#submit-button {
     height: calc(2.25rem + 20px);
@@ -680,6 +618,7 @@ font-weight: 500;
   .form-control {
     border-radius: var(--border-radius-small);
     margin: 1.3rem 0;
+    margin-bottom: 30px !important;
   }
 
   .form-control:focus {
@@ -721,22 +660,29 @@ font-weight: 500;
   .site-footer {
     border-top: 1px solid #efebeb;
     padding: 3rem 0;
+    background: #171819;
   }
-
-  .site-footer a {
-    color: var(--p-color);
-    font-weight: var(--font-weight-light);
+  .site-footer p{
+    color: #fff;
+    font-weight: 100;
   }
-
-  .site-footer p {
-    font-size: var(--base-font-size);
-  }
-
   .contact .fa,
   .site-footer .fa {
-    color: var(--primary-color);
+    color: #D3D3D3;
   }
-
+  .copyright-text .copy-brand{
+    color: #D3D3D3 !important;
+    font-family: 'PT Sans Caption', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+  .copyright-text .clr{
+    background: -webkit-linear-gradient(top, #8f6B29, #FDE08D, #DF9F28) !important;
+    background: linear-gradient(top, #8f6B29, #FDE08D, #DF9F28) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
 
   /*---------------------------------------
      RESPONSIVE STYLES              
@@ -802,5 +748,23 @@ font-weight: 500;
     }
     .slick-slide img{
       width: 55%;
+    }
+    .my-services {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .about-bg{
+      transform: translateY(25%);
+      padding: 20px 25px 20px 25px;
+    }
+    .about-me{
+      padding-right: 0px;
+      margin-top: -50px;
+    }
+    .skill-mf{
+      transform: translateY(90%);
+    }
+    .contact{
+      margin-top: 400px !important;
     }
   }

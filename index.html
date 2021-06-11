@@ -14,7 +14,8 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/aos.css">
+    <!-- <link rel="stylesheet" href="css/aos.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/8628368ab2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.6/scrollreveal.js"></script>
     <!-- MAIN CSS -->
@@ -155,7 +156,7 @@
             <!-- Services Item Start -->
             <div class="row">
 
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="services__item">
                         <div class="services__item__icon">
                             <img src="./images/web-designing.png" alt="">
@@ -173,7 +174,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="services__item">
                         <div class="services__item__icon">
                             <img src="./images/web-development.png" alt="">
@@ -191,7 +192,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-4 col-md-6 col-sm-6" data-aos="fade-up">
                     <div class="services__item">
                         <div class="services__item__icon">
                             <img src="./images/wordpress.png" alt="">
@@ -216,7 +217,7 @@
 
     <div class="fixed-bg" id="about">
         <section class="section my-services pad-15" data-section="section2">
-            <section class="discover-our-story">
+            <section class="discover-our-story" data-aos="fade-up">
                 <div class="container about-bg">
                     <div class="row about-margin">
                         <div class="col-md-12 about-title">
@@ -277,42 +278,42 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up">
                 <span>HTML</span>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up">
                 <span>CSS</span>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up">
                 <span>jQuery</span>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up">
                 <span>PHP</span>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up">
                 <span>JavaScript</span>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
                         aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+            <div class="col-md-4 col-sm-12" data-aos="fade-up">
                 <span>React.JS</span>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55"
@@ -373,7 +374,8 @@
             <div class="row">
 
                 <div class="col-lg-6 col-md-5">
-                    <p class="copyright-text">Copyright &copy; 2021 <strong class="copy-brand">M<span class="clr">D</span>I</strong> - All
+                    <p class="copyright-text">Copyright &copy; 2021 <strong class="copy-brand">M<span
+                                class="clr">D</span>I</strong> - All
                         Rights Reserved
 
                         <br>Design: <a href="https://www.tooplate.com">Md .Danish Iqbal</a>
@@ -441,9 +443,10 @@
     <!-- SCRIPTS -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/aos.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="./js/typed.js"></script>
     <script>
@@ -482,6 +485,14 @@
                     }
                 }]
             });
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            offset: 200,
+            delay: 100,
+            duration: 1000,
         });
     </script>
 
